@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             image: "adventech.png",
             github: "https://github.com/Burkifa23/sabbath-school-lessons",
             demo: "https://sabbath-school.adventech.io/kin",
-            skills: ["javascript", "node", "git", "markdown"]
+            skills: ["JavaScript", "Node.js", "Git", "Markdown"]
         },
         {
             name: "Christ In Song",
@@ -38,15 +38,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
             image: "cis.jpeg",
             github: "https://github.com/Burkifa23/cis-hymnals",
             demo: "https://play.google.com/store/apps/details?id=com.tinashe.christInSong&hl=en-US",
-            skills: ["python", "markdown"]
+            skills: ["Python", "Markdown"]
         }
         /*
         {
             name: "Project 3",
             description: "A brief description of Project 3",
             image: "project3.jpg",
-            github: "https://github.com/yourusername/project3",
-            demo: "https://project3-demo.com",
+            github: "githb link",
+            demo: "live link or download link or video",
             skills: ["python", "javascript"]
         }
         */
