@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frank's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <img src="Burkifa23_Logo-removebg-preview (1).png" alt="Website Logo" class="logo-img">
+            </div>
+            <nav>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <button id="theme-toggle" class="button button-outline">
+                <span class="sun-icon">☀️</span>
+                <span class="moon-icon">🌙</span>
+            </button>
+        </header>
+
+        <main>
+            <section id="about" class="section">
+                <img src="profile-picture.jpg" alt="Your Name" class="profile-picture">
+                <h1>Hi, I'm Frank</h1>
+                <p> I am a prospective computer scientist. Frankly, everything about programming and
+                    developing software and hardware to solve real-world problems is exciting. I
+                    tirelessly try to learn every tool to solve these problems. In my free time, I work on
+                    open-source projects which I believe can impact my community.</p>
+                <a href="#contact" class="button button-primary">Get in touch</a>
+            </section>
+
+            <section id="skills" class="section">
+                <h2>Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-item" data-skill="html">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML" class="skill-logo">
+                        <span>HTML</span>
+                    </div>
+                    <div class="skill-item" data-skill="css">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" class="skill-logo">
+                        <span>CSS</span>
+                    </div>
+                    <div class="skill-item" data-skill="javascript">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="JavaScript" class="skill-logo">
+                        <span>JavaScript</span>
+                    </div>
+                    
+                    <div class="skill-item" data-skill="react">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" class="skill-logo">
+                        <span>React</span>
+                    </div>
+                    <div class="skill-item" data-skill="node">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" alt="Node.js" class="skill-logo">
+                        <span>Node.js</span>
+                    </div>
+                    <div class="skill-item" data-skill="node">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" class="skill-logo">
+                        <span>Git</span>
+                    </div>
+                    <div class="skill-item" data-skill="node">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/markdown/markdown-original.svg" alt="markdown" class="skill-logo">
+                        <span>Markdown</span>
+                    </div>
+                    
+                    <div class="skill-item" data-skill="python">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" class="skill-logo">
+                        <span>Python</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience" class="section">
+                <h2>Work Experience</h2>
+                <div class="experience-item">
+                    <img src="COSSA_logo-removebg-preview (1).png" alt="TechCorp Inc." class="company-logo">
+                    <div class="experience-content">
+                        <h3>Public Relations Officer</h3>
+                        <p>Computing Science Students' Association  | 2024 - Present</p>
+                        <ul>
+                            <li>Ensuring proper dissemination of information.</li>
+                            <li>Collaborating with the design team to create posts on our varius platforms.</li>
+                            <li>Managing all CoSSA social Media platforms. @cossavvu on GitHub, Instagram, LinkedIn, YouTube, and TikTok.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <img src="vvu-removebg-preview.png" alt="StartUp Solutions" class="company-logo">
+                    <div class="experience-content">
+                        <h3>Computer Lab Assitant</h3>
+                        <p>Valley View University | 2024 - Present</p>
+                        <ul>
+                            <li>Maintaining and troubleshooting existing systems.</li>
+                            <li>Providing Technical Support.</li>
+                            <li>Implemented an efficient time keeper.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="section">
+                <h2>My Projects</h2>
+                <div id="project-filter" class="project-filter">
+                    <!-- Filter buttons will be dynamically added here -->
+                </div>
+                <div id="project-grid" class="project-grid">
+                    <!-- Project items will be dynamically added here -->
+                </div>
+            </section>
+        </main>
+
+        <footer id="contact" class="section">
+            <h2>Get in Touch</h2>
+            <div class="social-links">
+                <a href="https://github.com/burkifa23" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" class="social-icon">
+                </a>
+                <a href="https://gitlab.com/burkifa23" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg" alt="GitLab" class="social-icon">
+                </a>
+                <a href="https://linkedin.com/in/frank-kwizera-mugwaneza" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" alt="LinkedIn" class="social-icon">
+                </a>
+                <a href="https://twitter.com/burkifa23" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg" alt="X" class="social-icon">
+                </a>
+                <a href="https://instagram.com/frank.2.played_it" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <img src="instagram-logo.png" alt="Instagram" class="social-icon">
+                </a>
+                <a href="https://tiktok.com/@burkifa23" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <img src="tiktok-logo.png" alt="TikTok" class="social-icon">
+                </a>
+            </div>
+            <p class="copyright">© <span id="current-year"></span> Burkifa23. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
