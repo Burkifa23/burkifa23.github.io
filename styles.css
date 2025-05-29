@@ -221,6 +221,17 @@ body {
     color: var(--muted-foreground);
 }
 
+main {
+    padding-top: 100px; /* Prevents content hiding behind fixed header */
+}
+
+
+@media (max-width: 768px) {
+    main {
+        padding-top: 120px; /* More space for mobile header */
+    }
+}
+
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
