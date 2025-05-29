@@ -110,13 +110,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
             const projectElement = document.createElement('div');
             projectElement.classList.add('project-item');
             projectElement.innerHTML = `
-                <img src="${project.image}" alt="${project.name}" class="project-image">
+                <img src="${project.image}" alt="${project.name}" class="project-image" 
+                     onerror="this.src='placeholder-project.jpg'">
                 <div class="project-info">
                     <h3>${project.name}</h3>
                     <p>${project.description}</p>
                     <div class="project-links">
-                        <a href="${project.github}" class="button button-outline" target="_blank">GitHub</a>
-                        <a href="${project.demo}" class="button button-primary" target="_blank">Live Demo</a>
+                        <a href="${project.github}" class="button button-outline" target="_blank" rel="noopener">GitHub</a>
+                        <a href="${project.demo}" class="button button-primary" target="_blank" rel="noopener">Live Demo</a>
                     </div>
                 </div>
             `;
