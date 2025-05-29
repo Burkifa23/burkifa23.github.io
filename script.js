@@ -43,8 +43,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
         
         {
             name: "Syntaxed",
-            description: "Syntaxed - Professional code typing trainer supporting 25+ programming languages. Improve your coding speed and accuracy with real-time metrics, personal statistics, and Monaco Editor integration.",
-            image: "syntaxed-preview.png",
+            description: "A code typing trainer supporting 25+ programming languages. Improve your coding speed and accuracy with real-time metrics, personal statistics, and Monaco Editor integration.",
+            image: "full_Logo.png",
             github: "https://github.com/Burkifa23/Syntaxed",
             demo: "https://burkifa23.github.io/Syntaxed",
             skills: ["HTML", "CSS", "JavaScript"]
