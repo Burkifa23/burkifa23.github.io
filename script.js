@@ -34,16 +34,26 @@ document.addEventListener('DOMContentLoaded', (event) => {
         },
         {
             name: "Christ In Song",
-            description: "A multi-lingual adventist Hymn. I contribute languages on this app.",
+            description: "A multi-lingual Adventist hymn App. I contributed languages on this app.",
             image: "cis.jpeg",
             github: "https://github.com/Burkifa23/cis-hymnals",
             demo: "https://play.google.com/store/apps/details?id=com.tinashe.christInSong&hl=en-US",
             skills: ["Python", "Markdown"]
+        },
+        
+        {
+            name: "Syntaxed",
+            description: "Syntaxed - Professional code typing trainer supporting 25+ programming languages. Improve your coding speed and accuracy with real-time metrics, personal statistics, and Monaco Editor integration.",
+            image: "syntaxed-preview.png",
+            github: "https://github.com/Burkifa23/Syntaxed",
+            demo: "https://burkifa23.github.io/Syntaxed",
+            skills: ["HTML", "CSS", "JavaScript"]
         }
+        
         /*
         {
-            name: "Project 3",
-            description: "A brief description of Project 3",
+            name: "Project ",
+            description: "A brief description of Project ",
             image: "project3.jpg",
             github: "githb link",
             demo: "live link or download link or video",
