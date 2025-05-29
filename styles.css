@@ -250,3 +250,62 @@ main {
         grid-template-columns: 1fr;
     }
 }
+
+/* Add smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Improve mobile navigation */
+@media (max-width: 768px) {
+    .header {
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    
+    nav {
+        order: 3;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .nav-link {
+        margin: 0;
+    }
+}
+
+/* Add focus states for accessibility */
+.nav-link:focus,
+.button:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+/* Respect motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .skill-item {
+        animation: none;
+    }
+    
+    * {
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Improve theme toggle button */
+#theme-toggle {
+    border: none;
+    background: var(--muted);
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+}
+
+#theme-toggle:hover {
+    background: var(--primary);
+    color: var(--primary-foreground);
+}
