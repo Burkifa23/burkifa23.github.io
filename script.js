@@ -64,13 +64,38 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     // Create filter buttons
     const skills = [...new Set(projects.flatMap(project => project.skills))];
+
+    // Add "All" button first
+    const allButton = document.createElement('button');
+    allButton.textContent = 'All';
+    allButton.classList.add('button', 'button-primary'); // Start as active
+    allButton.addEventListener('click', () => {
+        filterProjects(null);
+        setActiveFilter(allButton);
+    });
+    projectFilter.appendChild(allButton);
+
+    // Add skill buttons
     skills.forEach(skill => {
         const button = document.createElement('button');
         button.textContent = skill;
         button.classList.add('button', 'button-outline');
-        button.addEventListener('click', () => filterProjects(skill));
+        button.addEventListener('click', () => {
+            filterProjects(skill);
+            setActiveFilter(button);
+        });
         projectFilter.appendChild(button);
     });
+
+    // Function to handle active filter styling
+    function setActiveFilter(activeButton) {
+        document.querySelectorAll('#project-filter .button').forEach(btn => {
+            btn.classList.remove('button-primary');
+            btn.classList.add('button-outline');
+        });
+        activeButton.classList.remove('button-outline');
+        activeButton.classList.add('button-primary');
+    }
 
     // Function to filter projects
     function filterProjects(skill) {
