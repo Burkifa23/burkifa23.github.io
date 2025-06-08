@@ -309,3 +309,85 @@ html {
     background: var(--primary);
     color: var(--primary-foreground);
 }
+
+/* CV Section Styles */
+.cv-container {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cv-summary {
+    margin-bottom: 2rem;
+}
+
+.cv-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.cv-highlights {
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.cv-highlights h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.highlight-item {
+    background-color: var(--muted);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.highlight-item:hover {
+    transform: translateY(-5px);
+}
+
+.highlight-item h4 {
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.highlight-item p {
+    margin: 0;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: var(--muted-foreground);
+}
+
+/* CV Download in Contact Section */
+.cv-download {
+    margin-bottom: 2rem;
+}
+
+.cv-download p {
+    margin-bottom: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .cv-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .highlight-grid {
+        grid-template-columns: 1fr;
+    }
+}
